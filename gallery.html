@@ -3,95 +3,320 @@
 <head>
 	<title>Nazmul Haque | Gallery</title>
 	<link rel="stylesheet" type="text/css" href="css/design.css">
+
+	<style>
+
+		h1 {
+		  text-transform: uppercase;
+		  font-size: 4em;
+		}
+		img {
+		  height: 200px;
+		}
+		.cardholder {
+		  margin-top: 150px;
+		          perspective: 600px;
+		}
+		.card {
+		  width: 300px;
+		  height: 200px;
+		  background-color: transparent;
+		          transform: rotateY(50deg);
+		  box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
+		  transition: all 1s ease;
+		  color: transparent;
+		}
+		.card:hover {
+		  width: 300px;
+		  height: 200px;
+		  background-color: transparent;
+		          transform: rotateY(0deg);
+		  box-shadow: 0px 0px 36px 2px rgba(0, 0, 0, 0.25);
+		  color: black;
+		}
+		.card:hover p {
+		  background-color: white;
+		}
+		p.desc {
+		  z-index:999;
+		  position: absolute;
+		  top: 10px;
+		  padding: 5px;
+		}
+		p.desc:hover {
+		}
+
+		div.gallery {
+		  margin: 5px;
+		  border: 1px solid #ccc;
+		  float: left;
+		  height: 180px;
+		}
+
+		div.gallery:hover {
+		  border: 1px solid #777;
+		}
+
+		div.gallery img {
+		  height: 100%;
+		  width: auto;
+		}
+
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		}
+
+  </style>
+
+
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
 </head>
 <body>
+	
 	<div>
 	<ul class="menu">
-		<li><a href="index.html" style="color:white;">HOME</a></li>
+		<li><a  href="index.html" style="color:white;">ABOUT</a></li>
 		<li><a href="education.html" style="color:white;"> EDUCATION </a></li>
-		<li><a href="profile.html" style="color:white;"> PROFILES </a></li>
-		<li><a href="interests.html" style="color:white;"> INTERESTS </a></li>
-		<li><a class="active" href="gallery.html"> GALLERY </a></li>
+		<li><a  href="interests.html" style="color:white;"> SKILLS & INTERESTS </a></li>
+    	<li><a href="projects.html" style="color:white;"> PROJECTS </a></li>
+		<li><a class="active" href="gallery.html" style="color:white;"> HOBBIES & OTHERS </a></li>
+    	<li><a href="profile.html" style="color:white;"> PROFILES </a></li>
+
 		<li id="contact"><a href="contact.html" style="color:white;"> CONTACT</a></li>
 	</ul>
 	</div>
 
+	<p  style="font-size: 150%" id="eheading">Extra Curricular Activities</p>
+	  <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Secretary, Rajshahi University IT Society</li>
+	  <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Event Starter, RU CSE Annual Book Donation Fest</li>
+	  <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Event Management Team Member, TEXLAB IT, Rajshahi</li>
+	   <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Organizing Team Member, Rajshahi Android Boot camp</li>
+	   <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Founding Member, Rajshahi University Wiki Club</li>
+	   <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Founding Member, Rajshahi University Engineering Students Association</li> 
+	   <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">General Member, Rajshahi University Higher Study Club</li>
+	   <li style="list-style-type: square;
+		    margin-left: 40px; 
+		    font-size:18px;">Leader of a Participant Team, ICT Ministry Hackathon</li>
+	 </ul>
+
 	<div class="container">
-
-	  <div class="row">
-		    <div class="column">
-		      <img class="demo cursor" src="img/gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="MY FRIENDS">
+		<div class="row">
+			<div class="col-md-3">
+    		  <div class="cardholder">
+        		<div class="card">
+          		<img src="img/gallery1.jpg" />
+    			<p class="desc">RU Wiki Club</p>
+        		</div>
+      		  </div>
+    	    </div>
+    
+		    <div class="col-md-3">
+		      <div class="cardholder">
+		        <div class="card">
+		           <img src="img/gallery2.jpg" />
+		          <p class="desc">GDG Sonargaon</p>
+		        </div>
+		      </div>
 		    </div>
-
-		    <div class="column"> 
-		      <img class="demo cursor" src="img/gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="UNIVERSITY OF RAJSHAHI">
+		    
+		    <div class="col-md-3">
+		      <div class="cardholder">
+		        <div class="card">
+		          <img src="img/gallery3.jpg" />
+		    	  <p class="desc">Reception</p>
+		        </div>
+		      </div>
 		    </div>
-
-		    <div class="column">
-		      <img class="demo cursor" src="img/gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="PARIS ROAD">
+		    
+		    <div class="col-md-3">
+		      <div class="cardholder">
+		        <div class="card">
+		          <img src="img/gallery4.jpg" />
+		          <p class="desc">Book Donate Fest</p>
+		        </div>
+		      </div>
 		    </div>
-
-		    <div class="column">
-		      <img class="demo cursor" src="img/gallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="FOURTH SCIENCE BUILDING">
-		    </div>
 	  </div>
-
-
-	  <div class="caption-container">
-	    <p id="caption"></p>
-	  </div>
-
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-	  <div class="mySlides">
-	      <img src="img/gallery1.jpg" style="width:70%">
-	  </div>
-
-	  <div class="mySlides">
-	      <img src="img/gallery2.jpg" style="width:70%">
-	  </div>
-
-	  <div class="mySlides">
-	      <img src="img/gallery3.jpg" style="width:70%">
-	  </div>
-
-	  <div class="mySlides">
-	      <img src="img/gallery4.jpg" style="width:70%">
-	  </div>
-
 	</div>
 
-<script>
-	var slideIndex = 1;
-	showSlides(slideIndex);
+	<br><br><br><br>	<br><br><br><br>
 
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
+	<p  style="font-size: 150%" id="eheading"> Hobbies</p>
 
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
+	  <li style="list-style-type: square;
+		    margin-left:100px; 
+		    font-size:18px;"> Creative Writing </li>
+	  <li style="list-style-type: square;
+		    margin-left: 100px; 
+		    font-size:18px;">Reading Novels</li>
+	   <li style="list-style-type: square;
+		    margin-left: 100px; 
+		    font-size:18px;"> Engaging in Social Work</li>
+	   <li style="list-style-type: square;
+		    margin-left: 100px; 
+		    font-size:18px; font-weight: bold;"> Designing (Logo, Banner, T-shirt etc)</li>
 
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("demo");
-	  var captionText = document.getElementById("caption");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	      slides[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	      dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";
-	  dots[slideIndex-1].className += " active";
-	  captionText.innerHTML = dots[slideIndex-1].alt;
-	}
-	</script>
+	<br><br><br><br>
+
+	<p  style="font-size: 150%" id="eheading">My Designs</p>
+	
+		<div class="gallery">
+		  <a target="_blank" >
+		    <img src="img/gallery5.jpg" height="500">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery6.jpg" height="500">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank" >
+		    <img src="img/gallery7.jpg" height="500">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery8.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery9.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery99.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery10.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery11.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery111.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery12.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery13.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery14.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery144.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery155.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery15.jpg" height="900">
+		  </a>
+		</div>
+
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery16.jpg" height="900">
+		  </a>
+		</div>
+		
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery17.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery18.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery19.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery20.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery21.jpg" height="900">
+		  </a>
+		</div>
+
+		<div class="gallery">
+		  <a target="_blank">
+		    <img src="img/gallery22.jpg" height="900">
+		  </a>
+		</div>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
 </body>
 </html>

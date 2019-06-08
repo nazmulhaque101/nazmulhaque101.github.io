@@ -27,16 +27,19 @@ li a {
     text-decoration: none;
     float: left;
     background-color: #595959;
+    list-style-type: none;
 }
 
 li a:hover:not(.active) {
     background-color: #4dcb4d;
     color: white;
+    list-style-type: none;
 }
 
 li a.active {
     color: white;
     background-color: #4CAF50;
+    list-style-type: none;
 }
 
 #contact {
@@ -82,15 +85,67 @@ li a.active {
 
 
 
-/*Education and Interests page*/
+/*Skills and Interests page*/
+
+  #skill {
+    font-size: 18px;
+
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+  }
+
+  #skill td, #skill th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #skill tr:nth-child(even){background-color: #e6e6ff;}
+
+  #skill tr:hover {background-color: #bfbfbf;}
+
+  #skill th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
 
 
+
+  #education {
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+  }
+
+  #education td, #education th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #education tr:nth-child(even){background-color: #e6e6ff;}
+
+  #education tr:hover {background-color: #bfbfbf;}
+
+  #education th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
 
 
 #eheading{
-	font-size: 40px;
-	color: #4CAF50;
+	font-size: 35px;
+	color: #595959;
 	text-align: center;
+  font-weight: bold;
 }
 
 #eheading2{
@@ -213,4 +268,8 @@ li a.active {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+li {
+    list-style-type: none;
 }
